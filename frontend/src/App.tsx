@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
 import {
   Activity, Building2, Bell, ShieldAlert, AlertTriangle,
-  CheckCircle2, ShieldCheck, Database, Radio, Wrench, ChevronRight
+  CheckCircle2, ShieldCheck, Database, Radio, ChevronRight
 } from 'lucide-react';
-import { OverviewPage } from './pages/OverviewPage';
-import { PlantMachineExplorer } from './pages/PlantMachineExplorer';
-import { AlarmExplorer } from './pages/AlarmExplorer';
-import { IncidentIntelligence } from './pages/IncidentIntelligence';
-import { AnomalyCenter } from './pages/AnomalyCenter';
-import { CorrectiveActionsPage } from './pages/CorrectiveActionsPage';
-import { DataQualityEvaluation } from './pages/DataQualityEvaluation';
-import { DataGenerationExport } from './pages/DataGenerationExport';
 import { api } from './services/api';
+
+const OverviewPage = lazy(() => import('./pages/OverviewPage').then((module) => ({ default: module.OverviewPage })));
+const PlantMachineExplorer = lazy(() => import('./pages/PlantMachineExplorer').then((module) => ({ default: module.PlantMachineExplorer })));
+const AlarmExplorer = lazy(() => import('./pages/AlarmExplorer').then((module) => ({ default: module.AlarmExplorer })));
+const IncidentIntelligence = lazy(() => import('./pages/IncidentIntelligence').then((module) => ({ default: module.IncidentIntelligence })));
+const AnomalyCenter = lazy(() => import('./pages/AnomalyCenter').then((module) => ({ default: module.AnomalyCenter })));
+const CorrectiveActionsPage = lazy(() => import('./pages/CorrectiveActionsPage').then((module) => ({ default: module.CorrectiveActionsPage })));
+const DataQualityEvaluation = lazy(() => import('./pages/DataQualityEvaluation').then((module) => ({ default: module.DataQualityEvaluation })));
+const DataGenerationExport = lazy(() => import('./pages/DataGenerationExport').then((module) => ({ default: module.DataGenerationExport })));
 
 const NAV_TABS = [
   { id: 'overview', label: 'Executive Overview', icon: Activity },
@@ -120,14 +121,16 @@ export function App() {
 
         {/* Content Viewport */}
         <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto w-full overflow-x-hidden">
-          {activeTab === 'overview' && <OverviewPage onNavigateToTab={setActiveTab} />}
-          {activeTab === 'machines' && <PlantMachineExplorer />}
-          {activeTab === 'alarms' && <AlarmExplorer />}
-          {activeTab === 'incidents' && <IncidentIntelligence />}
-          {activeTab === 'anomalies' && <AnomalyCenter />}
-          {activeTab === 'actions' && <CorrectiveActionsPage />}
-          {activeTab === 'quality' && <DataQualityEvaluation />}
-          {activeTab === 'generator' && <DataGenerationExport />}
+          <Suspense fallback={<p className="text-sm text-slate-400">Loading dashboard...</p>}>
+            {activeTab === 'overview' && <OverviewPage onNavigateToTab={setActiveTab} />}
+            {activeTab === 'machines' && <PlantMachineExplorer />}
+            {activeTab === 'alarms' && <AlarmExplorer />}
+            {activeTab === 'incidents' && <IncidentIntelligence />}
+            {activeTab === 'anomalies' && <AnomalyCenter />}
+            {activeTab === 'actions' && <CorrectiveActionsPage />}
+            {activeTab === 'quality' && <DataQualityEvaluation />}
+            {activeTab === 'generator' && <DataGenerationExport />}
+          </Suspense>
         </main>
       </div>
     </div>
