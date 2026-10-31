@@ -1,0 +1,30 @@
+{
+  "origin": "Deterministic Synthetic Generator",
+  "seed": 20261022,
+  "profile": "full",
+  "schema_version": "1.0.0",
+  "generation_timestamp": "2026-10-01T00:00:00",
+  "time_window_start": "2026-10-01T00:00:00",
+  "time_window_end": "2026-10-31T00:00:00",
+  "row_counts": {
+    "plants": 4,
+    "machines": 60,
+    "safety_zones": 12,
+    "machine_safety_zones": 60,
+    "interlocks": 120,
+    "alarm_definitions": 200,
+    "operator_shifts": 360,
+    "machine_state_histories": 809,
+    "interlock_state_histories": 120,
+    "alarm_events": 50000,
+    "acknowledgements": 41664,
+    "incidents": 54,
+    "corrective_actions": 54,
+    "detection_rules": 10,
+    "alarm_replay_groups": 6,
+    "audit_logs": 109,
+    "ground_truth_anomalies": 24
+  },
+  "canonical_checksum": "563a46e7c2b567942f3ccd27bd893aa0597f5f80273c1b521b7b2dd4b302cd40",
+  "external_dataset_claim": "None. All records are synthetically generated."
+}

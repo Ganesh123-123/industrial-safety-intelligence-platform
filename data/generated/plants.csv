@@ -1,0 +1,5 @@
+plant_id,plant_code,plant_name,location,timezone,status,created_at
+PLANT-01,PLT-DET-01,Detroit Assembly Center,"Detroit, MI, USA",America/Detroit,ACTIVE,2025-10-01T00:00:00
+PLANT-02,PLT-STU-02,Stuttgart Propulsion Plant,"Stuttgart, Germany",Europe/Berlin,ACTIVE,2025-10-01T00:00:00
+PLANT-03,PLT-NAG-03,Nagoya Heavy Pressworks,"Nagoya, Japan",Asia/Tokyo,ACTIVE,2025-10-01T00:00:00
+PLANT-04,PLT-MON-04,Monterrey Robotics Hub,"Monterrey, Mexico",America/Monterrey,ACTIVE,2025-10-01T00:00:00

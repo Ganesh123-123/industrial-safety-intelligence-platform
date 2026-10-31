@@ -1,0 +1,242 @@
+[
+  {
+    "evaluation_record_id": "GT-ACK-NEG-001",
+    "affected_entity_type": "acknowledgements",
+    "affected_entity_id": "ACK-ALM-MCH-18-000001-99",
+    "expected_anomaly_type": "ACKNOWLEDGEMENT_BEFORE_ALARM",
+    "expected_detection": true,
+    "expected_severity": "HIGH",
+    "expected_reason": "Response time is negative (-30s). Acknowledgement timestamp precedes alarm.",
+    "related_record_ids": "ALM-MCH-18-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ACK-NEG-002",
+    "affected_entity_type": "acknowledgements",
+    "affected_entity_id": "ACK-ALM-MCH-38-000001-99",
+    "expected_anomaly_type": "ACKNOWLEDGEMENT_BEFORE_ALARM",
+    "expected_detection": true,
+    "expected_severity": "HIGH",
+    "expected_reason": "Response time is negative (-45s). Acknowledgement timestamp precedes alarm.",
+    "related_record_ids": "ALM-MCH-38-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ACK-NEG-003",
+    "affected_entity_type": "acknowledgements",
+    "affected_entity_id": "ACK-ALM-MCH-58-000001-99",
+    "expected_anomaly_type": "ACKNOWLEDGEMENT_BEFORE_ALARM",
+    "expected_detection": true,
+    "expected_severity": "HIGH",
+    "expected_reason": "Response time is negative (-60s). Acknowledgement timestamp precedes alarm.",
+    "related_record_ids": "ALM-MCH-58-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ACK-NEG-004",
+    "affected_entity_type": "acknowledgements",
+    "affected_entity_id": "ACK-ALM-MCH-43-000001-99",
+    "expected_anomaly_type": "ACKNOWLEDGEMENT_BEFORE_ALARM",
+    "expected_detection": true,
+    "expected_severity": "HIGH",
+    "expected_reason": "Response time is negative (-75s). Acknowledgement timestamp precedes alarm.",
+    "related_record_ids": "ALM-MCH-43-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ACK-NEG-005",
+    "affected_entity_type": "acknowledgements",
+    "affected_entity_id": "ACK-ALM-MCH-03-000001-99",
+    "expected_anomaly_type": "ACKNOWLEDGEMENT_BEFORE_ALARM",
+    "expected_detection": true,
+    "expected_severity": "HIGH",
+    "expected_reason": "Response time is negative (-90s). Acknowledgement timestamp precedes alarm.",
+    "related_record_ids": "ALM-MCH-03-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ITL-IMP-001",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-01-009000",
+    "expected_anomaly_type": "IMPOSSIBLE_INTERLOCK_STATE",
+    "expected_detection": true,
+    "expected_severity": "CRITICAL",
+    "expected_reason": "Machine state is RUNNING while interlock snapshot reports TRIPPED without bypass.",
+    "related_record_ids": "MCH-01"
+  },
+  {
+    "evaluation_record_id": "GT-ITL-IMP-002",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-02-009001",
+    "expected_anomaly_type": "IMPOSSIBLE_INTERLOCK_STATE",
+    "expected_detection": true,
+    "expected_severity": "CRITICAL",
+    "expected_reason": "Machine state is RUNNING while interlock snapshot reports TRIPPED without bypass.",
+    "related_record_ids": "MCH-02"
+  },
+  {
+    "evaluation_record_id": "GT-ITL-IMP-003",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-03-009002",
+    "expected_anomaly_type": "IMPOSSIBLE_INTERLOCK_STATE",
+    "expected_detection": true,
+    "expected_severity": "CRITICAL",
+    "expected_reason": "Machine state is RUNNING while interlock snapshot reports TRIPPED without bypass.",
+    "related_record_ids": "MCH-03"
+  },
+  {
+    "evaluation_record_id": "GT-ITL-IMP-004",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-04-009003",
+    "expected_anomaly_type": "IMPOSSIBLE_INTERLOCK_STATE",
+    "expected_detection": true,
+    "expected_severity": "CRITICAL",
+    "expected_reason": "Machine state is RUNNING while interlock snapshot reports TRIPPED without bypass.",
+    "related_record_ids": "MCH-04"
+  },
+  {
+    "evaluation_record_id": "GT-ITL-IMP-005",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-05-009004",
+    "expected_anomaly_type": "IMPOSSIBLE_INTERLOCK_STATE",
+    "expected_detection": true,
+    "expected_severity": "CRITICAL",
+    "expected_reason": "Machine state is RUNNING while interlock snapshot reports TRIPPED without bypass.",
+    "related_record_ids": "MCH-05"
+  },
+  {
+    "evaluation_record_id": "GT-INC-MISS-001",
+    "affected_entity_type": "incidents",
+    "affected_entity_id": "INC-2026-900001",
+    "expected_anomaly_type": "INCIDENT_MISSING_TRIGGER_CONTEXT",
+    "expected_detection": true,
+    "expected_severity": "MEDIUM",
+    "expected_reason": "Incident lacks triggering alarm event ID and has no supporting machine state change within window.",
+    "related_record_ids": "MCH-60"
+  },
+  {
+    "evaluation_record_id": "GT-INC-MISS-002",
+    "affected_entity_type": "incidents",
+    "affected_entity_id": "INC-2026-900002",
+    "expected_anomaly_type": "INCIDENT_MISSING_TRIGGER_CONTEXT",
+    "expected_detection": true,
+    "expected_severity": "MEDIUM",
+    "expected_reason": "Incident lacks triggering alarm event ID and has no supporting machine state change within window.",
+    "related_record_ids": "MCH-59"
+  },
+  {
+    "evaluation_record_id": "GT-INC-MISS-003",
+    "affected_entity_type": "incidents",
+    "affected_entity_id": "INC-2026-900003",
+    "expected_anomaly_type": "INCIDENT_MISSING_TRIGGER_CONTEXT",
+    "expected_detection": true,
+    "expected_severity": "MEDIUM",
+    "expected_reason": "Incident lacks triggering alarm event ID and has no supporting machine state change within window.",
+    "related_record_ids": "MCH-58"
+  },
+  {
+    "evaluation_record_id": "GT-INC-MISS-004",
+    "affected_entity_type": "incidents",
+    "affected_entity_id": "INC-2026-900004",
+    "expected_anomaly_type": "INCIDENT_MISSING_TRIGGER_CONTEXT",
+    "expected_detection": true,
+    "expected_severity": "MEDIUM",
+    "expected_reason": "Incident lacks triggering alarm event ID and has no supporting machine state change within window.",
+    "related_record_ids": "MCH-57"
+  },
+  {
+    "evaluation_record_id": "GT-ALM-DUP-001",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-18-008000",
+    "expected_anomaly_type": "DUPLICATE_ALARM_REPLAY",
+    "expected_detection": true,
+    "expected_severity": "LOW",
+    "expected_reason": "Duplicate telemetry frame replaying source_event_id SRC-MCH-18-000001 within 0.25s.",
+    "related_record_ids": "ALM-MCH-18-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ALM-DUP-002",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-48-008001",
+    "expected_anomaly_type": "DUPLICATE_ALARM_REPLAY",
+    "expected_detection": true,
+    "expected_severity": "LOW",
+    "expected_reason": "Duplicate telemetry frame replaying source_event_id SRC-MCH-48-000001 within 0.25s.",
+    "related_record_ids": "ALM-MCH-48-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ALM-DUP-003",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-43-008002",
+    "expected_anomaly_type": "DUPLICATE_ALARM_REPLAY",
+    "expected_detection": true,
+    "expected_severity": "LOW",
+    "expected_reason": "Duplicate telemetry frame replaying source_event_id SRC-MCH-43-000001 within 0.25s.",
+    "related_record_ids": "ALM-MCH-43-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ALM-DUP-004",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-13-008003",
+    "expected_anomaly_type": "DUPLICATE_ALARM_REPLAY",
+    "expected_detection": true,
+    "expected_severity": "LOW",
+    "expected_reason": "Duplicate telemetry frame replaying source_event_id SRC-MCH-13-000001 within 0.25s.",
+    "related_record_ids": "ALM-MCH-13-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ALM-DUP-005",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-08-008004",
+    "expected_anomaly_type": "DUPLICATE_ALARM_REPLAY",
+    "expected_detection": true,
+    "expected_severity": "LOW",
+    "expected_reason": "Duplicate telemetry frame replaying source_event_id SRC-MCH-08-000001 within 0.25s.",
+    "related_record_ids": "ALM-MCH-08-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ALM-DUP-006",
+    "affected_entity_type": "alarm_events",
+    "affected_entity_id": "ALM-MCH-29-008005",
+    "expected_anomaly_type": "DUPLICATE_ALARM_REPLAY",
+    "expected_detection": true,
+    "expected_severity": "LOW",
+    "expected_reason": "Duplicate telemetry frame replaying source_event_id SRC-MCH-29-000002 within 0.25s.",
+    "related_record_ids": "ALM-MCH-29-000002"
+  },
+  {
+    "evaluation_record_id": "GT-ACT-UNVER-001",
+    "affected_entity_type": "corrective_actions",
+    "affected_entity_id": "ACT-INC-2026-000001-99",
+    "expected_anomaly_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+    "expected_detection": true,
+    "expected_severity": "HIGH",
+    "expected_reason": "Corrective action has action_status CLOSED but verification_status is PENDING and verified_at is empty.",
+    "related_record_ids": "INC-2026-000001"
+  },
+  {
+    "evaluation_record_id": "GT-ACT-UNVER-002",
+    "affected_entity_type": "corrective_actions",
+    "affected_entity_id": "ACT-INC-2026-000002-99",
+    "expected_anomaly_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+    "expected_detection": true,
+    "expected_severity": "HIGH",
+    "expected_reason": "Corrective action has action_status CLOSED but verification_status is PENDING and verified_at is empty.",
+    "related_record_ids": "INC-2026-000002"
+  },
+  {
+    "evaluation_record_id": "GT-ACT-UNVER-003",
+    "affected_entity_type": "corrective_actions",
+    "affected_entity_id": "ACT-INC-2026-000003-99",
+    "expected_anomaly_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+    "expected_detection": true,
+    "expected_severity": "HIGH",
+    "expected_reason": "Corrective action has action_status CLOSED but verification_status is PENDING and verified_at is empty.",
+    "related_record_ids": "INC-2026-000003"
+  },
+  {
+    "evaluation_record_id": "GT-ACT-UNVER-004",
+    "affected_entity_type": "corrective_actions",
+    "affected_entity_id": "ACT-INC-2026-000004-99",
+    "expected_anomaly_type": "ACTION_CLOSED_WITHOUT_VERIFICATION",
+    "expected_detection": true,
+    "expected_severity": "HIGH",
+    "expected_reason": "Corrective action has action_status CLOSED but verification_status is PENDING and verified_at is empty.",
+    "related_record_ids": "INC-2026-000004"
+  }
+]

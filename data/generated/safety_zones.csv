@@ -1,0 +1,13 @@
+safety_zone_id,plant_id,zone_code,zone_name,risk_level,description,effective_from,effective_to,status
+ZONE-01-01,PLANT-01,SZ-DET-PRESS,Stamping & Press Perimeter,CRITICAL,Standard primary monitored perimeter for Stamping & Press Perimeter,2025-05-19T00:00:00,,ACTIVE
+ZONE-01-02,PLANT-01,SZ-DET-ROBOT,Robotic Cell Safety Envelope,HIGH,Standard primary monitored perimeter for Robotic Cell Safety Envelope,2025-05-19T00:00:00,,ACTIVE
+ZONE-01-03,PLANT-01,SZ-DET-LOGIS,Conveyor Logistics Lane,MEDIUM,Standard primary monitored perimeter for Conveyor Logistics Lane,2025-05-19T00:00:00,,ACTIVE
+ZONE-02-01,PLANT-02,SZ-STU-PRESS,Stamping & Press Perimeter,CRITICAL,Standard primary monitored perimeter for Stamping & Press Perimeter,2025-05-19T00:00:00,,ACTIVE
+ZONE-02-02,PLANT-02,SZ-STU-ROBOT,Robotic Cell Safety Envelope,HIGH,Standard primary monitored perimeter for Robotic Cell Safety Envelope,2025-05-19T00:00:00,,ACTIVE
+ZONE-02-03,PLANT-02,SZ-STU-LOGIS,Conveyor Logistics Lane,MEDIUM,Standard primary monitored perimeter for Conveyor Logistics Lane,2025-05-19T00:00:00,,ACTIVE
+ZONE-03-01,PLANT-03,SZ-NAG-PRESS,Stamping & Press Perimeter,CRITICAL,Standard primary monitored perimeter for Stamping & Press Perimeter,2025-05-19T00:00:00,,ACTIVE
+ZONE-03-02,PLANT-03,SZ-NAG-ROBOT,Robotic Cell Safety Envelope,HIGH,Standard primary monitored perimeter for Robotic Cell Safety Envelope,2025-05-19T00:00:00,,ACTIVE
+ZONE-03-03,PLANT-03,SZ-NAG-LOGIS,Conveyor Logistics Lane,MEDIUM,Standard primary monitored perimeter for Conveyor Logistics Lane,2025-05-19T00:00:00,,ACTIVE
+ZONE-04-01,PLANT-04,SZ-MON-PRESS,Stamping & Press Perimeter,CRITICAL,Standard primary monitored perimeter for Stamping & Press Perimeter,2025-05-19T00:00:00,,ACTIVE
+ZONE-04-02,PLANT-04,SZ-MON-ROBOT,Robotic Cell Safety Envelope,HIGH,Standard primary monitored perimeter for Robotic Cell Safety Envelope,2025-05-19T00:00:00,,ACTIVE
+ZONE-04-03,PLANT-04,SZ-MON-LOGIS,Conveyor Logistics Lane,MEDIUM,Standard primary monitored perimeter for Conveyor Logistics Lane,2025-05-19T00:00:00,,ACTIVE
