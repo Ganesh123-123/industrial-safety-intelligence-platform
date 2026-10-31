@@ -4,7 +4,10 @@ import {
   OverviewMetrics, ValidationReport, EvaluationReport, PaginatedResponse
 } from '../types';
 
-const API_BASE = '/api';
+const configuredApiBase = import.meta.env.VITE_API_BASE_URL?.trim();
+const API_BASE = configuredApiBase
+  ? `${configuredApiBase.startsWith('http') ? '' : 'https://'}${configuredApiBase.replace(/\/$/, '')}/api`
+  : '/api';
 
 export async function fetchJson<T>(url: string, options?: RequestInit): Promise<T> {
   const res = await fetch(url, options);
